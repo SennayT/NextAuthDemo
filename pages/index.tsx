@@ -7,8 +7,8 @@ const Home: NextPage = () => {
 
   if(session) {
     return <div>
-      <p>email:{session.email}</p>
-      <p>role:{session.role}</p>
+      <p><> email:{session.email} </></p>
+      <p><> role:{session.role}</></p>
       <button onClick={()=>signOut()} >Sign out</button>
       <button onClick={()=>{
       console.log(session)
